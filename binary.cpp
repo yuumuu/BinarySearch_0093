@@ -63,6 +63,11 @@ void binarySearch() {
     char ulang;
 
     do {
-        
+        cout << "\n======================================================\n";
+        cout << "\t\t\tPencarian Binary Search";
+        cout << "\n======================================================\n";
+
+        cout << "Masukkan elemen yang ingin dicari: ";
+        cin >> x;
     } while (ulang == 'y' || ulang == 'Y');
 }
