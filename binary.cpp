@@ -30,9 +30,8 @@ void input() {
 void bubbleSortArray() {
     int pass = 1;
 
-    do
-    {
-        for (int j = 0; j < nPanjang - 1 - pass; j++) {
+    do{
+        for (int j = 0; j <= nPanjang - 1 - pass; j++) {
             if (element[j] > element[j + 1]) {
                 int temp = element[j];
                 element[j] = element[j + 1];
@@ -75,9 +74,10 @@ void binarySearch() {
 
         do {
             int mid = (low + high) / 2;
-            if (element[mid] == x)
+            if (element[mid] == x) {
                 cout << "\n[✓] Elemen " << x << " ditemukan pada indeks " << mid << ".\n";
                 return;
+            }
             
             if (x < element[mid]) {high = mid - 1;} else {low = mid + 1;}
         } while (low <= high);
